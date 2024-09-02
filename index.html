@@ -9,6 +9,7 @@
         <!--<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /> -->
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -26,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#questions">Research Questions</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#methods">Computational Methods</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#history">Previous Positions</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#history">Experience/Education</a></li>
                     <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Publications</a></li>
                     -->
@@ -47,15 +48,21 @@
                     </h1>
                         <div class=" mb-5">
                             
-                            <a href="mailto:eehasan@indiana.edu">eehasan@indiana.edu</a>
+                            <a href="mailto:eehasan@indiana.edu">eehasan@iu.edu</a>
                         </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
                             <div class="flex-grow-1">
-                                <p class="lead mb-5">I am a Cognitive Science and Psychological Science PhD student at Indiana University. Previously, I finished my Masters in Mathematical Sciences from University of Hyderabad. <br> <br>
+                                <p class="lead mb-5">I am a dual PhD Cognitive Science and Psychology student, advised by <a href='https://computationaldecisionlab.com/'>Jennifer Trueblood </a> at Indiana University. Previously, I finished my Masters in Psychology at Vanderbilt University and Masters in Mathematics from the University of Hyderabad, India. I worked for a year in a healthcare analytics startup as a Mathematician/Machine Learning Specialist.<br> <br>
 
-                                I adopt a joint computational and experimental approach to better understand cognitive decision making processes. I use the insights from my research to design and test interventions to improve the quality of decisions in critical environments like medical decision making and social media interactions. My research draws on advances in artificial intelligence to develop methods to understand human decision making. Conversely, I use models of human decisions to design reliable and robust artificial intelligence algorithms.
+                                I adopt a joint computational and experimental approach to better understand cognitive decision making processes. I have studied a wide range of decisions ranging from multi-attribute choice, consumer decisions, medical decisions and social media decisions. In my research I have used statistics, approximate Bayesian inference, evidence accumulation models and machine learning (deep learning) models. Some of my broad questions are.
+                                <ol>
+                                    <li> <b>How to use novices for specialized tasks?</b> I find that humans are adaptive and learn to do specialized tasks such as <a href="https://doi.org/10.1037/dec0000210"> medical decision making </a> and detecting <a href="https://doi.org/10.31234/osf.io/47cqw"> cognitive distortions </a> with little training. In fact, when put together groups of novices can <a href="https://doi.org/10.1111/tops.12588"> outperform experts  </a>in some medical tasks.
+                                    <li> <b>What is the relationship between machine (deep learning) intelligence and human intelligence?</b> There are intriguing similarities and differences between human and machine intelligence. We can use this relationship to understand, improve and augment human decisions. Intriguingly, in recent work we find that novices can represent features of complex-real world stimuli in ways similar to domain-specific neural networks (in prep). Also, one can resolve <a href="https://escholarship.org/uc/item/4p6878mm"> inconsistencies </a> in decisions made by a human by looking at decisions on similar images as determined by neural network representations. 
+                                    <li> <b>How does attention impact decisions?</b> It is impossible for us to consider all of the information around us. Thus, we rely on attention to focus and intelligently select information. I am interested in characterizing the nature of the attentional processes and studying its impact on behavior. We show how manipulating attention by <a href="https://doi.org/10.31234/osf.io/rfcgp"> presentation formats </a> and <a href="https://escholarship.org/uc/item/5jq8n5w9"> bottom up processes such as salience </a> impacts decisions.
+                                    
+                                </ol>
                                 <br> 
                                 <br> 
                                 I once believed that - <span class="text-primary"><b>"Anything that could be said meaningfully, can be said mathematically"</b></span>. Now, I am interested in understanding the limits of this idea.
@@ -91,7 +98,129 @@
                 </div>
             </section>
             <hr class="m-0" />
+            <!-- Questions-->
 
+            <section class="resume-section" id="questions">
+                <!--<div class="container resume-section-content"> -->
+                
+            <div class="resume-section-content">
+                <h2 class="mb-5">Projects</h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class='card' >
+                            <img class='card-img-top' src="assets/img/research_questions/representations.png">
+                            <div class='card-body'>
+                                <h3 class="card-title">Deep Learning Representations and Human Representations</h3>
+                                <h5 class="card-subtitle mb-2 text-muted">Using deep learning machine representations to understand and improve human decisions. </h5>
+                                <p class="card-text">Artificial neural networks can give us representations of complex real-world images, expanding the scope of cognitive computational modeling beyond boring lab stimuli that have simple representations. My research uses these representations to better understand and augment human decision-making. We demonstrate how medical-image classification decisions can be de-noised by aggregating decisions on similar images. In our algorithm, the final decision on a target image is cancerous if a percentage t of the k most similar images are cancerous, else it is not cancerous. Similarity between images is calculated as the distance between representations from an artificial neural network. We show that this algorithm works for novices but not experts, indicating difference in decision making processes for the two populations (Hasan et al. <a href="https://doi.org/10.1111/tops.12588"> 2022a </a> , <a href="https://escholarship.org/uc/item/4p6878mm"> 2022b </a>).  More recently, I find that novice representations are more like domain-specific CNNs trained on cancer cell classification showing that human representations are flexible and can meaningfully extract information from domain-specific stimuli.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class='card' >
+                            <img class='card-img-top' src="assets/img/research_questions/multiattribute.png">
+                            <div class='card-body'>
+                                <h3 class="card-title">The Role of Visual Attention in Decision Making</h3>
+                                <h5 class="card-subtitle mb-2 text-muted">Multi-alternative Multi-attribute Choice</h5>
+                                <p class="card-text">I am curious about how bounded resources such as visual attention might impact choice. To study the impact of presentation format on choice, we designed a registered report with a large-scale experiment with over 2000 individuals 24 different condition, comprehensively manipulating the presentation format. We find that the order robustly impacts choice for the attraction effect by potentially changing the comparisons that are made <a href="https://osf.io/preprints/psyarxiv/rfcgp/"> (Hasan et al. 2024) </a> . Using a mechanistic process model to compare mechanisms, we find that bottom-up attention by making options salient impact choice in different ways by creating a selection boost <a href="https://escholarship.org/uc/item/5jq8n5w9">(Hasan et al. 2024) </a>. This highlights the complexity in the role of attention in choice. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class='card' >
+                            <img class='card-img-top' src="assets/img/research_questions/woc.png">
+                            <div class='card-body'>
+                                <h3 class="card-title">Wisdom of the Crowds</h3>
+                                <h5 class="card-subtitle mb-2 text-muted">How do we harness collective intelligence for complex (e.g., medical) tasks?</h5>
+                                <p class="card-text">According to the wisdom of the crowd phenomenon, the aggregated decision of a group is more accurate than the decision of an average decision-maker. In medical decision making, we find the wisdom of the inner crowd effect, where repeated decisions improves individual classification accuracy for both novices and experts. Building on these results, we show that aggregation algorithms based on confidence weighting scale to larger groups of participants, dramatically improving diagnostic accuracy, with the performance of groups of novices reaching that of individual experts <a href="https://doi.org/10.1037/dec0000210">Hasan et al. (2023)</a>. We collaborate with <a href="https://www.centaurlabs.com/">Centaur Labs</a>, which recruits individuals with varying expertise to label medical datasets on an app-based interface. There was a large dispersion in the geographical location, experience, training, and performance of the recruited individuals. We tested several wisdom of the crowd algorithms of varying complexity from a simple unweighted average to more complex Bayesian models that account for individual patterns of errors. Using a switchboard analysis, we observe that the best-performing algorithms rely on selecting top performers, weighting decisions by training accuracy, and take into account the task environment. These algorithms far exceed expert performance. <a href="https://doi.org/10.1186/s41235-024-00558-6"> Hasan et al. (2024)</a></p>
+                            </div>
+                        </div>
+                    </div>   
+
+
+                    <div class="col-md-6 mb-4">
+                        <div class='card' >
+                            <img class='card-img-top' src="assets/img/research_questions/social_media.png">
+                            <div class='card-body'>
+                                <h3 class="card-title">Social Media Interactions</h3>
+                                <h5 class="card-subtitle mb-2 text-muted">What is social media doing to us? Can we do better?</h5>
+                                <p class="card-text">Social Media has changed the way we interact with each other. It has created an environment with complex interactions between human, algorithms and other entities. How does this affect cognition and behavior? In one paper, we focus on <a href="https://www.health.harvard.edu/blog/how-to-recognize-and-tame-your-cognitive-distortions-202205042738#:~:text=Cognitive%20distortions%20are%20internal%20mental,cut%20down%20our%20mental%20burden." target="_blank">cognitive distortions</a> or distorted thinking is the use of exaggerated unrealistic ways of thinking and speaking which is associated with mental illnesses such as depression and schizophrenia. Social media, parallelly, has a heightened use of language associated with cognitive distortions. My research examines this association between mental illness and social media use in a controlled experimental environment. We investigated the impact of teaching individuals about cognitive distortions and studied the change in decisions to interact with online social media content. <a href="https://doi.org/10.31234/osf.io/47cqw">Hasan et al. (Under Review) </a>.</p>
+                            </div>
+                        </div>
+                    </div>        
+
+
+
+
+                    </div>
+                </div>
+
+                <!--</div> -->
+            </section>
+                
+            <!-- Skills-->
+            <section class="resume-section" id="methods">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Computational Methods </h2>
+
+                    <p class="lead mb-5">
+                        I love learning about new computational techniques and associated debates. These are my current favorite approaches.
+                    </p>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-4">
+                            <div class='card' >
+                                <img class='card-img-top' src="assets/img/methods/linear_mixed_effects.png">
+                                <div class='card-body'>
+                                    <h3 class="card-title">Generalized Linear Mixed Models</h3>
+                                    <h5 class="card-subtitle mb-2 text-muted">Fixed and Random Effects.</h5>
+                                    <p class="card-text">Environments and experiments are often structured. They contain several decisions from the same person and several decisions on the same item. In my work, I found it extremely powerful to exploit this structure by treating participant and experimental items as random effects. I especially like the libraries in R for this sort of analysis. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class='card' >
+                                <img class='card-img-top' src="assets/img/methods/neural_network.png">
+                                <div class='card-body'>
+                                    <h3 class="card-title">Artificial Neural Networks</h3>
+                                    <h5 class="card-subtitle mb-2 text-muted">Machine Representations/ Embeddings.</h5>
+                                    <p class="card-text">The internal layers of a neural network contain important information about the stimulus. I am interested in exploiting this geometric structure and explore the correspondence between humans and machines. Recently, I built myself a deep learning PC to explore this further. I am comfortable especially with PyTorch and have trained convolutional neural networks, transformers, GANs etc,. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class='card' >
+                                <img class='card-img-top' src="assets/img/methods/evidence_accumulation.png">
+                                <div class='card-body'>
+                                    <h3 class="card-title">Evidence Accumulation Models</h3>
+                                    <h5 class="card-subtitle mb-2 text-muted">Decision after a threshold.</h5>
+                                    <p class="card-text">In evidence accumulation models, evidence is continuously accumulated until a threshold of evidence is accumulated after which a decision is triggered. Within this framework, one might make different models to explain what the nature of this evidence is, how it is accumulated and when a decision is triggered. This has allowed us to explore all sorts of decision biases and the role of attention in decision making. I typically use python and custom code for this sort of analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class='card' >
+                                <img class='card-img-top' src='assets/img/methods/bayesian.png'>
+                                <div class='card-body'>
+                                    <h3 class="card-title">Bayesian MCMC Methods </h3>
+                                    <h5 class="card-subtitle mb-2 text-muted">Fixed and Random Effects.</h5>
+                                    <p class="card-text">Bayesian models give us the uncertainty in our estimates. I have used PyMC3 for most of my Bayesian Analysis. I have also coded up my own differential evolution MC sampler. I loved looking under the hood to see how these sampling algorithms work and the kind of issues they may have. My experience also made me realize concerns about issues such as inference with correlated parameters, bimodal distributions etc. which are issues with inference in general (not just Bayesian inference).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <hr class="m-0" />
             <!-- Questions-->
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
@@ -132,163 +261,11 @@
 
             <hr class="m-0" />
 
-            <!-- Questions-->
-            <section class="resume-section" id="questions">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Research Questions</h2>
-                    <h3 class="mb-0">Multi-alternative Multi-attribute Choice</h3>
-                    <div class="subheading mb-3">Why do choices depend on 'irrelevant' factors?</div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-
-
-                            
-
-                            <p>
-                            When an individual is deciding between alternatives, these alternatives interact with each other. In my research, we show that the format and order in which the information is displayed can impact choice. Using these findings, I am interested in building a mechanistic model that explains how attentional processes of information acquisition can impact the deliberative process during choice.
-                            </p> 
-
-                            <br>
-
-
-                        </div>
-                        <div class="flex-shrink-0"><img class="img-fluid" style="max-width: 500px; width: 100%" src="assets/img/research_questions/multiattribute.png"/></div>
-
-                    </div>
-                    <h3 class="mb-0">Modeling with Deep Learning Representations</h3>
-                    <div class="subheading mb-3">How do we decide with complex real world alternatives?</div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-
-
-                            <p>
-                                Artificial neural networks can give us representations of complex real-world images, expanding the scope of cognitive computational modeling beyond boring lab stimuli that have simple representations. My research uses these representations to better understand and augment human decision making. I am interested in bridging the correspondence between neural network representations and human mental representations and using them for modeling.
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                        <div class="flex-shrink-0"><img class="img-fluid" style="max-width: 500px; width: 100%" src="assets/img/research_questions/representations.png"/></div>
-
-                    </div>
-                    
-                    <h3 class="mb-0">Medical Wisdom of the Crowds</h3>
-                    <div class="subheading mb-3">How do we harness collective intelligence for complex (eg. medical) tasks?</div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-
-                            <p>
-                                According to the wisdom of the crowd phenomenon, the aggregated decision of a group is more accurate than the decision of an average decision-maker. In my research, we train novice and semi-expert populations with low average accuracy on medical tasks to achieve performance that exceeds that of seasoned medical experts. We collaborate with <a href='https://www.centaurlabs.com/'>Centaur Labs </a> which recruits individuals with varying expertise to label medical datasets for downstream artificial intelligence applications. We develop and test different intelligent aggregation algorithms, to achieve accurate, reliable labels on medical datasets. 
-                        </div>
-                        <div class="flex-shrink-0"><img class="img-fluid" style="max-width: 500px; width: 100%" src="assets/img/research_questions/woc.png"/></div>
-
-                    </div>
-                    
-
-                    <h3 class="mb-0">Cognitive Distortions and Social Media Interactions</h3>
-                    <div class="subheading mb-3">What is social media doing to us? Can we do better?</div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-
-                            <p>
-                                <a href="https://www.health.harvard.edu/blog/how-to-recognize-and-tame-your-cognitive-distortions-202205042738#:~:text=Cognitive%20distortions%20are%20internal%20mental,cut%20down%20our%20mental%20burden."> Cognitive Distortions </a> or distorted thinking is the use of exaggerated unrealistic ways of thinking and speaking which is associated with mental illnesses such as depression and schizophrenia. Parallely, social media has a heightened use of language associated with cognitive distortions. My research examines this association between mental illness and social media use in a controlled experimental environment. We investigated the impact of teaching individuals about cognitive distortions and studied the change in decisions to interact with online social media content.   
-                            </p>
-
-                        </div>
-                        <div class="flex-shrink-0"><img class="img-fluid" style="max-width: 500px; width: 100%" src="assets/img/research_questions/social_media.png"/></div>
-
-
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="methods">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Computational Methods </h2>
-
-                    <p class="lead mb-5">
-                        I love learning about new computational techniques and associated debates. These are my current favorite approaches.
-                    </p>
-
-
-                    <div class='row'>
-                    <div class="col-md-6 d-flex flex-column justify-content-center text-center" >
-                        <div class="mt-auto">
-                            <img class="img-fluid"  src='assets/img/methods/linear_mixed_effects.png' style="max-width: 100%"/>
-                            <br>
-                            <span class="text-primary"><b>Generalized Linear Models </b></span> <a href="https://www.youtube.com/watch?app=desktop&v=QCqF-2E86r0&ab_channel=MatthewE.Clapham">(source)</a> <br></div>
-                        </div>
-                    
-                    <div class="col-md-6 d-flex flex-column justify-content-center text-center">
-                        <div class="mt-auto">
-                            <img class="img-fluid"  src='assets/img/methods/neural_network.png'/>
-                            <br>
-                            <span class="text-primary"><b>Artificial Neural Networks </b></span><br></div>
-                        </div>
-                    
-                    <div class="col-md-6 d-flex flex-column justify-content-center text-center">
-                        <div class="mt-auto">
-                            <img class="img-fluid"  src='assets/img/methods/evidence_accumulation.png'/>
-                            <br>
-                            <span class="text-primary"><b>Evidence Accumulation Models </b></span><br></div>
-                        </div>
-
-                    <div class="col-md-6 d-flex flex-column justify-content-center text-center">
-                        <div class="mt-auto">
-                            <img class="img-fluid"  src='assets/img/methods/bayesian.png' />
-                            <br>
-                            <span class="text-primary"><b>Bayesian MCMC Methods </b></span><a href="https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html">(source)</a> <br></div>
-                        </div>
-
-                    </div>
-                    <br>
-                    <br>
-                    
-
-                    <!--
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                    `-->
-                </div>
-            </section>
-            <hr class="m-0" />
             
-        </div>
-
         <!-- Education-->
             <section class="resume-section" id="history">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5">Education/Experience</h2>
                     
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
